@@ -55,6 +55,9 @@ Here are some screenshots showing that these small modifications worked:
 ### Bonus question : *why would you want to do **that** ?*
 
 - Simple and honest answer : I am constantly using my [uLogMe](https://github.com/Naereen/uLogMe/) software to watch and monitor the *title* of the active window on my laptops, and I wanted to store the time spent editing Jupyter notebooks under a special category ("Notebooks") and not under the general browsing time.
+
+  ![Demo on my uLogMe application](demo_on_uLogMe.png)
+
 - Fun answer : ... I am always curious about how a certain piece of software works, and I love tweaking "just a little bit" open-source pieces of code!
 
 ### Interesting question : *why writing a tutorial and not a Jupyter Notebook extension (`nbextension`) ?*
