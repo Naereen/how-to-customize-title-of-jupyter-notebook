@@ -23,12 +23,14 @@ Typically, this Python package will be installed in `/usr/local/lib/python3.5/di
   + `page.html` on line #7, add "` - Jupyter Notebook`" after `{% endblock %}` and before `</title>`.
 - Be sure to save all the changes, and that's it for this step.
 
+> Of course, if the line number don't match, just search for the pattern, and edit on the first line that contains it !
+
 ## Second modification : Javascript files
 
 - Go in `PATH/notebook/static/notebook/js/`
 - Edit, probably with `sudo` rights, the following scripts:
-- + `main.js` and `main.min.js ` : 
-  + `savewidgets.js` :
+- + `main.min.js ` (and maybe `main.js`) : on line #32216 (or nearby!), add "` + ' - Jupyter Notebook'`" after "`document.title = nbname`"... ​:warning:​ that file is HUGE, so try to use a solid text editor to edit it! (for instance, [GNU nano](https://www.nano-editor.org/))
+  + `savewidgets.js` : on line #139, add "` + ' - Jupyter Notebook'`" after "`document.title = nbname`"
 
 ----
 
