@@ -34,6 +34,17 @@ Typically, this Python package will be installed in `/usr/local/lib/python3.5/di
 
 ----
 
+## Demos ?
+Here are some screenshots showing that these small modifications worked:
+
+### Editing a notebook : before and after
+![Editing a notebook : before and after](editing_a_notebook.png)
+
+### Home view : before and after
+![Home view : before and after](home_view.png)
+
+----
+
 ## Questions
 
 ### Bonus question : *why would you want to do **that** ?*
