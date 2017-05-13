@@ -45,6 +45,8 @@ Here are some screenshots showing that these small modifications worked:
 
 ----
 
+> You can also [see the useless PDF version of this webpage](How-to-customize-title-of-jupyter-notebook.pdf)... If you want!
+
 ## Questions
 
 ### Bonus question : *why would you want to do **that** ?*
