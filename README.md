@@ -17,10 +17,10 @@ Typically, this Python package will be installed in `/usr/local/lib/python3.5/di
 - Go in `PATH/templates/`
 - Edit, probably with `sudo` rights, the following templates:
 - + `view.html` on line #6, add "`- File View`" after `{{page_title}}` and before `</title>`.
-  + `tree.html` on line #3, add "`- File Tree`" after `{{page_title}}` and before `{% endblock %}`.
-  + `terminal.html` on line #3, add "`- Terminal`" after `{{page_title}}` and before `{% endblock %}`.
-  + `edit.html` on line #3, add "`- Editor`" after `{{page_title}}` and before `{% endblock %}`.
-  + `page.html` on line #7, add "` - Jupyter Notebook`" after `{% endblock %}` and before `</title>`.
+  + `tree.html` on line #3, add "`- File Tree`" after `{{page_title}}` and before `{` `%` `endblock` `%` `}`.
+  + `terminal.html` on line #3, add "`- Terminal`" after `{{page_title}}` and before `{` `%` `endblock` `%` `}`.
+  + `edit.html` on line #3, add "`- Editor`" after `{{page_title}}` and before `{` `%` `endblock` `%` `}`.
+  + `page.html` on line #7, add "` - Jupyter Notebook`" after `{` `%` `endblock` `%` `}` and before `</title>`.
 - Be sure to save all the changes, and that's it for this step.
 
 > Of course, if the line number don't match, just search for the pattern, and edit on the first line that contains it !
