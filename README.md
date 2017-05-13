@@ -29,8 +29,11 @@ Typically, this Python package will be installed in `/usr/local/lib/python3.5/di
 
 - Go in `PATH/notebook/static/notebook/js/`
 - Edit, probably with `sudo` rights, the following scripts:
-- + `main.min.js ` (and maybe `main.js`) : on line #32216 (or nearby!), add "` + ' - Jupyter Notebook'`" after "`document.title = nbname`"... ​:warning:​ that file is HUGE, so try to use a solid text editor to edit it! (for instance, [GNU nano](https://www.nano-editor.org/))
+- + `main.min.js ` (and maybe `main.js`) : on line #32216 (or nearby!), add "` + ' - Jupyter Notebook'`" after "`document.title = nbname`"...  :warning: that file is HUGE, so try to use a solid text editor to edit it! (for instance, [GNU nano](https://www.nano-editor.org/))
   + `savewidgets.js` : on line #139, add "` + ' - Jupyter Notebook'`" after "`document.title = nbname`"
+
+## Cautious!
+These changes **have to be done** again if you update (`pip install --upgrade`) Jupyter Notebook...
 
 ----
 
