@@ -75,7 +75,7 @@ Here are some screenshots showing that these small modifications worked:
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 [![Analytics](https://ga-beacon.appspot.com/UA-38514290-17/github.com/Naereen/how-to-customize-title-of-jupyter-notebook/README.md?pixel)](https://GitHub.com/Naereen/how-to-customize-title-of-jupyter-notebook/)
 
-[![ForTheBadge built-with-swag](http://ForTheBadge.com/images/how-to-customize-title-of-jupyter-notebook/built-with-swag.svg)](https://GitHub.com/Naereen/)
+[![ForTheBadge built-with-swag](http://ForTheBadge.com/images/badges/built-with-swag.svg)](https://GitHub.com/Naereen/)
 
-[![ForTheBadge uses-badges](http://ForTheBadge.com/images/how-to-customize-title-of-jupyter-notebook/uses-badges.svg)](http://ForTheBadge.com)
-[![ForTheBadge uses-git](http://ForTheBadge.com/images/how-to-customize-title-of-jupyter-notebook/uses-git.svg)](https://GitHub.com/)
+[![ForTheBadge uses-badges](http://ForTheBadge.com/images/badges/uses-badges.svg)](http://ForTheBadge.com)
+[![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://GitHub.com/)
