@@ -1,5 +1,32 @@
 # "How to customize [Jupyter notebooks](https://www.Jupyter.org/) document titles ?"
 
+## New tutorial :sparkles:
+By using [the latest features](https://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/JavaScript%20Notebook%20Extensions.html#custom.js) from Jupyter Notebook, you can use [this script `custom.js`](custom.js) to perform this hack very easily:
+
+```javascript
+// custom.js script for Jupyter Notebook
+// (C) Lilian Besson, 2018
+// See https://github.com/Naereen/how-to-customize-title-of-jupyter-notebook/issues/1
+// MIT License, https://lbesson.mit-license.org/
+window.document.title = window.document.title + " — Jupyter Notebook";
+```
+
+You can [download this raw file](https://github.com/Naereen/how-to-customize-title-of-jupyter-notebook/raw/master/custom.js) and save it to `~/.jupyter/custom/custom.js`.
+
+```bash
+mkdir -p ~/.jupyter/custom/
+cd ~/.jupyter/custom/
+wget https://github.com/Naereen/how-to-customize-title-of-jupyter-notebook/raw/master/custom.js
+# relaunch Jupyter notebook
+```
+
+See the difference (before | after):
+![latest_demo.png](latest_demo.png)
+
+---
+
+## Previous tutorial
+
 > This small document is here to *quickly* and *clearly* explain how to do the following tweak for *every* page that the [Jupyter](https://www.Jupyter.org/) application displays in your browser :
 >
 > >  « How to ensure that the title of the web page (`document.title` in the DOM) finishes with `" - Jupyter Notebook"` ? »
