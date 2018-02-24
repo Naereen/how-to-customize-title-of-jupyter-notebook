@@ -1,26 +1,34 @@
 # "How to customize [Jupyter notebooks](https://www.Jupyter.org/) document titles ?"
 
 ## New tutorial :sparkles:
-By using [the latest features](https://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/JavaScript%20Notebook%20Extensions.html#custom.js) from Jupyter Notebook, you can use [this script `custom.js`](custom.js) to perform this hack very easily:
+By using [the latest features](https://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/JavaScript%20Notebook%20Extensions.html#custom.js) from Jupyter Notebook, you can use [this script `custom.js`](custom.js) to perform this hack easily:
 
 ```javascript
 // custom.js script for Jupyter Notebook
 // (C) Lilian Besson, 2018
 // See https://github.com/Naereen/how-to-customize-title-of-jupyter-notebook/issues/1
 // MIT License, https://lbesson.mit-license.org/
-window.document.title = window.document.title + " — Jupyter Notebook";
+
+// Fourth solution, using deprecated __defineSetter__ method... simple and pretty!
+document.__defineSetter__('title', function(val) {
+    // document.title = val + " — Jupyter Notebook";   // WARNING Would be recursive!
+    console.log("Setting window's title to:", val);
+    document.querySelector('title').childNodes[0].nodeValue = val + " — Jupyter Notebook";
+});
 ```
 
-You can [download this raw file](https://github.com/Naereen/how-to-customize-title-of-jupyter-notebook/raw/master/custom.js) and save it to `~/.jupyter/custom/custom.js`.
+You can [download this raw `custom.js` file](https://github.com/Naereen/how-to-customize-title-of-jupyter-notebook/raw/master/custom.js) and save it to `~/.jupyter/custom/custom.js` (create the folder if needed):
 
 ```bash
 mkdir -p ~/.jupyter/custom/
 cd ~/.jupyter/custom/
 wget https://github.com/Naereen/how-to-customize-title-of-jupyter-notebook/raw/master/custom.js
-# relaunch Jupyter notebook
+cat custom.js  # just check the content by yourself, never trust a stranger from Internet!
+# relaunch Jupyter notebook!
 ```
 
-See the difference (before | after):
+See the difference (before, without "Jupyter Notebook" display in the window's title | after, with "Jupyter Notebook" in the title):
+
 ![latest_demo.png](latest_demo.png)
 
 ---
@@ -96,7 +104,7 @@ Here are some screenshots showing that these small modifications worked:
 
 ## :scroll: License ? [![GitHub license](https://img.shields.io/github/license/Naereen/badges.svg)](https://github.com/Naereen/how-to-customize-title-of-jupyter-notebook/blob/master/LICENSE)
 [MIT Licensed](https://lbesson.mit-license.org/) (file [LICENSE](LICENSE)).
-© [Lilian Besson](https://GitHub.com/Naereen), 2017.
+© [Lilian Besson](https://GitHub.com/Naereen), 2017-18.
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/how-to-customize-title-of-jupyter-notebook/graphs/commit-activity)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
